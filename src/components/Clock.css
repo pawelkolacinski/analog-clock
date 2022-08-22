@@ -1,0 +1,99 @@
+.clock{
+    
+    display:block;
+    --clock-size: 80vmin;
+    --border-size: min(5vmin,24px);
+
+    width: var(--clock-size);
+    aspect-ratio: 1/1;
+    
+    background-color: white;
+    border-radius: 50%;
+    border: var(--border-size) solid black;
+    position: relative;
+
+}
+
+
+.clock .arrows > *{
+    
+    height:calc(100%);
+    position:absolute;
+    background-color: transparent;
+    top: 0px;
+    
+}
+
+.clock .arrows > *::after{
+    content:"";
+    width:100%;
+    
+    display:block;
+    background-color:black;
+    position:relative;
+    
+}
+
+
+
+.arrow-hour{
+    width:2%;
+    left:49%;
+}
+
+.arrow-hour::after{
+    height:25%;
+    top:25%
+}
+
+.arrow-minute{
+    width:1.5%;
+    left:49.25%; 
+}
+
+.arrow-minute::after{
+    height:40%;
+    top:10%
+}
+
+.arrow-second{
+    width:0.5%;
+    left:49.75%;
+}
+
+.arrow-second::after{
+    height:45%;
+    top:5%
+}
+
+
+.middle-circle{
+    width:6%;
+    height:6%;
+    background-color: black;
+    border-radius: 50%;
+    position:absolute;
+    top:47%;
+    left:47%;
+}
+
+.hour-labels {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    
+    --R: calc ( var(--clock-size) ) ;
+    
+}
+
+.hour-labels > *{
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size: 4vmin
+    
+}
+
+/* .hour-labels > *:nth-child(1) {
+    transform: translate(0,calc( 1 * var(--R))) 
+} */
