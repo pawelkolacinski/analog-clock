@@ -73,7 +73,7 @@
   height: 100%;
   position: relative;
 
-  --R: calc (var(--clock-size));
+  
 }
 
 .hour-labels > * {
@@ -82,7 +82,3 @@
   left: 50%;
   font-size: 4vmin;
 }
-
-/* .hour-labels > *:nth-child(1) {
-    transform: translate(0,calc( 1 * var(--R))) 
-} */
